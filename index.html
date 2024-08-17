@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="background-video-container">
+            <video autoplay muted loop class="background-video">
+                <source src="gghdd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="container">
+            <h1>To-do List</h1>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Enter task..." />
+                <input type="date" id="deadlineInput" placeholder="" />
+                <button id="addButton">Add</button>
+            </div>
+            
+            <div id="todoList">
+                <h3>High Priority Tasks:</h3>
+                <div id="highPriorityContainer"></div>
+
+                <h3>Low Priority Tasks:</h3>
+                <div id="lowPriorityContainer"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
